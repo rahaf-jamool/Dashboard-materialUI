@@ -2,21 +2,16 @@
   
         <div class="md-layout">
         <div class="md-layout-item md-small-size-100 md-size-20">{{ id }}</div>
-        <div class="md-layout-item md-small-size-100 md-size-20">   
-            <router-link :to="`Store/${id}/Products`">{{ title }}</router-link>
-        </div>     
-        <div class="md-layout-item md-small-size-100 md-size-20"><select class="sections">
-            <option v-for="item in section" :key="item.ps">
-                {{ item.name }}
-            </option>
-        </select></div>  
 
+        <div class="md-layout-item md-small-size-100 md-size-20"><img v-lazy="`${image}`" /></div>
+
+        <div class="md-layout-item md-small-size-100 md-size-20">{{ name }}</div>
         <div class="md-layout-item md-small-size-100 md-size-20">
             <i v-if="is_appear == 'Appear'" class="fa fa-check"></i>
             <i v-else class="fa fa-times"></i>
         </div>
         <div class="icon md-layout-item md-small-size-100 md-size-20">
-            <router-link :to="`Stores/${id}`" >
+            <router-link :to="`/Store/${this.$route.params.id}/product/${id}`" >
                 <i class="fas fa-edit" style="margin: 0 10px;"></i>
             </router-link>
 
@@ -29,8 +24,8 @@
 <script>
 
 export default {
-  name: "Stores",
-props: ['id', 'title', 'section', 'name', 'is_active'],
+  name: "StoreProd",
+ props: ['id', 'name', 'image', 'is_appear', 'quantity'],
   data() {
     return {
       username: null,
