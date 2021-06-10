@@ -19,6 +19,14 @@
         <md-icon>person</md-icon>
         <p>All Stores</p>
       </sidebar-link>
+      <sidebar-link to="/allcategories">
+        <md-icon>person</md-icon>
+        <p>All Categories</p>
+      </sidebar-link>
+      <sidebar-link to="/allbrands">
+        <md-icon>person</md-icon>
+        <p>All Brands</p>
+      </sidebar-link>
       <sidebar-link to="/table">
         <md-icon>content_paste</md-icon>
         <p>Table list</p>
@@ -74,13 +82,13 @@ export default {
     DashboardContent,
     ContentFooter,
     MobileMenu,
-    FixedPlugin
+    FixedPlugin,
   },
   data() {
     return {
       sidebarBackground: "green",
-      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg")
+      sidebarBackgroundImage: require("@/assets/img/sidebar-2.jpg"),
     };
-  }
+  },
 };
 </script>
