@@ -17,13 +17,10 @@ import EditCategory from "@/pages/EditCategory.vue";
 import AllBrands from "@/pages/AllBrands.vue";
 import NewBrand from "@/pages/NewBrand.vue";
 import EditBrand from "@/pages/EditBrand.vue";
-//
-import TableList from "@/pages/TableList.vue";
-import Typography from "@/pages/Typography.vue";
-import Icons from "@/pages/Icons.vue";
-import Maps from "@/pages/Maps.vue";
-import Notifications from "@/pages/Notifications.vue";
-import UpgradeToPRO from "@/pages/UpgradeToPRO.vue";
+// Store Products
+import StoreProducts from "@/pages/StoreProducts.vue";
+import NewProductStor from "@/pages/NewProductStor.vue";
+import EditProductStor from "@/pages/EditProductStor.vue";
 
 const routes = [
   {
@@ -70,6 +67,22 @@ const routes = [
         name: "Stores",
         component: EditStore,
       },
+      // Stores => Products
+      {
+        path: "Store/:id/Products",
+        name: "Store/Products",
+        component: StoreProducts,
+      },
+      {
+        path: "/Store/:id/NewProduct",
+        name: "New Product in_Store",
+        component: NewProductStor,
+      },
+      {
+        path: "/Store/:id/product/:id_product",
+        name: "Edit Product in Store",
+        component: EditProductStor,
+      },
       // Categories
       {
         path: "allcategories",
@@ -101,39 +114,6 @@ const routes = [
         path: "editbrand/:id",
         name: "editbrand",
         component: EditBrand,
-      },
-      {
-        path: "table",
-        name: "Table List",
-        component: TableList,
-      },
-      {
-        path: "typography",
-        name: "Typography",
-        component: Typography,
-      },
-      {
-        path: "icons",
-        name: "Icons",
-        component: Icons,
-      },
-      {
-        path: "maps",
-        name: "Maps",
-        meta: {
-          hideFooter: true,
-        },
-        component: Maps,
-      },
-      {
-        path: "notifications",
-        name: "Notifications",
-        component: Notifications,
-      },
-      {
-        path: "upgrade",
-        name: "Upgrade to PRO",
-        component: UpgradeToPRO,
       },
     ],
   },
