@@ -27,6 +27,10 @@
         <md-icon>person</md-icon>
         <p>All Brands</p>
       </sidebar-link>
+      <sidebar-link to="/allDoctors">
+        <md-icon>person</md-icon>
+        <p>All Doctors</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">

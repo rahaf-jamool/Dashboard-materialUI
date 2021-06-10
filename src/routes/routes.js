@@ -21,6 +21,10 @@ import EditBrand from "@/pages/EditBrand.vue";
 import StoreProducts from "@/pages/StoreProducts.vue";
 import NewProductStor from "@/pages/NewProductStor.vue";
 import EditProductStor from "@/pages/EditProductStor.vue";
+//Doctors
+import AllDoctors from "@/pages/AllDoctors.vue";
+import NewDoctors from "@/pages/NewDoctors.vue";
+import EditDoctors from "@/pages/EditDoctors.vue";
 
 const routes = [
   {
@@ -91,12 +95,12 @@ const routes = [
       },
       {
         path: "editcategory/:id",
-        name: "EditCategoryForm",
+        name: "EditCategory",
         component: EditCategory,
       },
       {
         path: "newcategory",
-        name: "NewCategoryForm",
+        name: "NewCategory",
         component: NewCategory,
       },
       // Brands
@@ -114,6 +118,22 @@ const routes = [
         path: "editbrand/:id",
         name: "editbrand",
         component: EditBrand,
+      },
+      // Doctors
+      {
+        path: "allDoctors",
+        name: "allDoctors",
+        component: AllDoctors,
+      },
+      {
+        path: "newdoctor",
+        name: "newdoctor",
+        component: NewDoctors,
+      },
+      {
+        path: "editdoctors/:id",
+        name: "editdoctors",
+        component: EditDoctors,
       },
     ],
   },

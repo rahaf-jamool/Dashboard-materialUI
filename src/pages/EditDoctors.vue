@@ -2,7 +2,7 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-size-66">
-        <NewDoctorsForm data-background-color="green"> </NewDoctorsForm>
+        <EditDoctorsForm data-background-color="green"> </EditDoctorsForm>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
         <UploadImagesDoctor> </UploadImagesDoctor>
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import { NewDoctorsForm, UploadImagesDoctor } from "@/pages";
+import { EditDoctorsForm, UploadImagesDoctor } from "@/pages";
 
 export default {
-  name: "NewCategory",
+  name: "editdoctors",
   components: {
-    NewDoctorsForm,
+    EditDoctorsForm,
     UploadImagesDoctor,
   },
 };
