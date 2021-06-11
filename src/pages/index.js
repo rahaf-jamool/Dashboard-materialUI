@@ -1,37 +1,43 @@
-// Forms
-import Products from "../pages/UserProfile/Products.vue";
-import Stores from "../pages/UserProfile/Stores.vue";
-import Categories from "../pages/UserProfile/Categories.vue";
-import Brands from "../pages/UserProfile/Brands.vue";
-import StoreProd from "../pages/UserProfile/StoreProd.vue";
-import Doctors from "../pages/UserProfile/Doctors.vue";
-// Cards
-import UploadImages from "../pages/UserProfile/UploadImages.vue";
-import UploadImagesCategory from "../pages/UserProfile/UploadImagesCategory.vue";
-import UploadImagesBrand from "../pages/UserProfile/UploadImagesBrand.vue";
-import UploadImagesDoctor from "../pages/UserProfile/UploadImagesDoctor.vue";
-
-// Forms //
 //product
-import EditProductForm from "../pages/UserProfile/EditProductForm.vue";
-import CreateProductForm from "../pages/UserProfile/CreateProductForm.vue";
-//productStore AND Store
-import EditProductStor from "../pages/UserProfile/EditProductStor.vue";
-import CreateProductStor from "../pages/UserProfile/CreateProductStor.vue";
-import EditStoreForm from "../pages/UserProfile/EditStoreForm.vue";
-import CreateStoreForm from "../pages/UserProfile/CreateStoreForm.vue";
+import Products from "../pages/Product/component/Products.vue";
+import EditProductForm from "../pages/Product/component/EditProductForm.vue";
+import CreateProductForm from "../pages/Product/component/CreateProductForm.vue";
+import UploadImagesProduct from "../pages/Product/component/UploadImagesProduct.vue";
+
+// Store
+import Stores from "../pages/Store/component/Stores.vue";
+import EditStoreForm from "../pages/Store/component/EditStoreForm.vue";
+import CreateStoreForm from "../pages/Store/component/CreateStoreForm.vue";
+import UploadImagesStore from "../pages/Store/component/UploadImagesStore.vue";
+//productStore
+import StoreProd from "../pages/Product_Store/component/StoreProd.vue";
+import EditProductStor from "../pages/Product_Store/component/EditProductStor.vue";
+import CreateProductStor from "../pages/Product_Store/component/CreateProductStor.vue";
+import UpImagStrProd from "../pages/Product_Store/component/UpImagStrProd.vue";
+
 //category
-import NewCategoriesForm from "../pages/UserProfile/NewCategoriesForm.vue";
-import EditCategoriesForm from "../pages/UserProfile/EditCategoriesForm.vue";
+import Categories from "../pages/Categories/component/Categories.vue";
+import NewCategoriesForm from "../pages/Categories/component/NewCategoriesForm.vue";
+import EditCategoriesForm from "../pages/Categories/component/EditCategoriesForm.vue";
+import UploadImagesCategory from "../pages/Categories/component/UploadImagesCategory.vue";
+
 //brand
-import NewBrandForm from "../pages/UserProfile/NewBrandForm.vue";
-import EditBrandForm from "../pages/UserProfile/EditBrandForm.vue";
+import Brands from "../pages/Brands/component/Brands.vue";
+import NewBrandForm from "../pages/Brands/component/NewBrandForm.vue";
+import EditBrandForm from "../pages/Brands/component/EditBrandForm.vue";
+import UploadImagesBrand from "../pages/Brands/component/UploadImagesBrand.vue";
+
 //Doctors
-import NewDoctorsForm from "../pages/UserProfile/NewDoctorsForm.vue";
-import EditDoctorsForm from "../pages/UserProfile/EditDoctorsForm.vue";
+import Doctors from "../pages/Doctor/component/Doctors.vue";
+import NewDoctorsForm from "../pages/Doctor/component/NewDoctorsForm.vue";
+import EditDoctorsForm from "../pages/Doctor/component/EditDoctorsForm.vue";
+import UploadImagesDoctor from "../pages/Doctor/component/UploadImagesDoctor.vue";
+
 export {
-  UploadImages,
+  UploadImagesStore,
+  UpImagStrProd,
   UploadImagesCategory,
+  UploadImagesProduct,
   UploadImagesBrand,
   UploadImagesDoctor,
   EditProductForm,

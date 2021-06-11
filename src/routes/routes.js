@@ -2,29 +2,29 @@ import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
 // Products
-import AllProducts from "@/pages/AllProducts.vue";
-import NewProduct from "@/pages/NewProduct.vue";
-import EditProduct from "@/pages/EditProduct.vue";
+import AllProducts from "@/pages/Product/View/AllProducts.vue";
+import NewProduct from "@/pages/Product/View/NewProduct.vue";
+import EditProduct from "@/pages/Product/View/EditProduct.vue";
 // Stores
-import AllStores from "@/pages/AllStores.vue";
-import NewStore from "@/pages/NewStore.vue";
-import EditStore from "@/pages/EditStore.vue";
+import AllStores from "@/pages/Store/View/AllStores.vue";
+import NewStore from "@/pages/Store/View/NewStore.vue";
+import EditStore from "@/pages/Store/View/EditStore.vue";
 // Ctegories
-import AllCategories from "@/pages/AllCategories.vue";
-import NewCategory from "@/pages/NewCategory.vue";
-import EditCategory from "@/pages/EditCategory.vue";
+import AllCategories from "@/pages/Categories/View/AllCategories.vue";
+import NewCategory from "@/pages/Categories/View/NewCategory.vue";
+import EditCategory from "@/pages/Categories/View/EditCategory.vue";
 // Brands
-import AllBrands from "@/pages/AllBrands.vue";
-import NewBrand from "@/pages/NewBrand.vue";
-import EditBrand from "@/pages/EditBrand.vue";
+import AllBrands from "@/pages/Brands/View/AllBrands.vue";
+import NewBrand from "@/pages/Brands/View/NewBrand.vue";
+import EditBrand from "@/pages/Brands/View/EditBrand.vue";
 // Store Products
-import StoreProducts from "@/pages/StoreProducts.vue";
-import NewProductStor from "@/pages/NewProductStor.vue";
-import EditProductStor from "@/pages/EditProductStor.vue";
+import StoreProducts from "@/pages/Product_Store/View/StoreProducts.vue";
+import NewProductStor from "@/pages/Product_Store/View/NewProductStor.vue";
+import EditProductStor from "@/pages/Product_Store/View/EditProductStor.vue";
 //Doctors
-import AllDoctors from "@/pages/AllDoctors.vue";
-import NewDoctors from "@/pages/NewDoctors.vue";
-import EditDoctors from "@/pages/EditDoctors.vue";
+import AllDoctors from "@/pages/Doctor/View/AllDoctors.vue";
+import NewDoctors from "@/pages/Doctor/View/NewDoctors.vue";
+import EditDoctors from "@/pages/Doctor/View/EditDoctors.vue";
 
 const routes = [
   {

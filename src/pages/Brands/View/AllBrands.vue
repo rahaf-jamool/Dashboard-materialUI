@@ -3,14 +3,14 @@
     <form>
       <md-card>
         <md-card-header :data-background-color="'green'">
-          <h4 class="title">Categories</h4>
+          <h4 class="title">Brands</h4>
 
-          <p class="category">All your Categories</p>
+          <p class="category">All your Brands</p>
 
           <div class="new_product">
-            <router-link :to="`newcategory`"
+            <router-link :to="`newbrand`"
               ><button>
-                <i class="fa fa-plus"></i> &nbsp;&nbsp;New Categories
+                <i class="fa fa-plus"></i> &nbsp;&nbsp;New Brand
               </button></router-link
             >
           </div>
@@ -36,7 +36,7 @@
             </div>
             <div class="md-layout-item md-small-size-100 md-size-10">
               <md-field>
-                <label>Section</label>
+                <label>Description</label>
               </md-field>
             </div>
             <div class="md-layout-item md-small-size-100 md-size-10">
@@ -51,17 +51,17 @@
             </div>
           </div>
           <!-- loop products -->
-          <Categories
-            v-for="items in Categories"
+          <Brands
+            v-for="items in Brands"
             :key="items.pr"
             :id="items.id"
             :name="items.name"
             :image="items.image"
-            :section_id="items.section_id"
+            :section_id="items.Description"
             :is_active="items.is_active"
             style="margin: 10px 0"
           >
-          </Categories>
+          </Brands>
         </md-card-content>
       </md-card>
     </form>
@@ -70,19 +70,17 @@
 
 <script>
 import { mapState } from "vuex";
-import Categories from "../pages/UserProfile/Categories.vue";
+import Brands from "../component/Brands.vue";
 export default {
-  components: { Categories },
-  name: "allCategories",
+  name: "allBrands",
+  components: { Brands },
   computed: {
     ...mapState({
-      Categories: (state) => state.All.Categories,
-      sections: (state) => state.All.sections,
+      Brands: (state) => state.All.Brands,
     }),
   },
   mounted() {
-    this.$store.dispatch("loadCategories");
-    this.$store.dispatch("loadSections");
+    this.$store.dispatch("loadBrands");
   },
 };
 </script>

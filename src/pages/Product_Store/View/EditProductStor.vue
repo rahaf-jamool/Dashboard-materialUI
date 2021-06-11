@@ -5,19 +5,19 @@
         <EditProductStor data-background-color="green"> </EditProductStor>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
-        <UploadImages> </UploadImages>
+        <UpImagStrProd> </UpImagStrProd>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { EditProductStor, UploadImages } from "@/pages";
+import { EditProductStor, UpImagStrProd } from "@/pages";
 
 export default {
   components: {
     EditProductStor,
-    UploadImages
+    UpImagStrProd
   }
 };
 </script>

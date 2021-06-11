@@ -82,7 +82,7 @@
 
 <script>
 import { mapState } from "vuex";
-import Doctors from "../pages/UserProfile/Doctors.vue";
+import Doctors from "../component/Doctors.vue";
 export default {
   components: { Doctors },
   name: "allDoctors",

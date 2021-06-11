@@ -5,19 +5,19 @@
         <EditStoreForm data-background-color="green"> </EditStoreForm>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
-        <UploadImages> </UploadImages>
+        <UploadImagesStore> </UploadImagesStore>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { EditStoreForm, UploadImages } from "@/pages";
+import { EditStoreForm, UploadImagesStore } from "@/pages";
 
 export default {
   components: {
     EditStoreForm,
-    UploadImages
+    UploadImagesStore
   }
 };
 </script>

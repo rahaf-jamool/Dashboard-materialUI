@@ -5,19 +5,19 @@
         <EditProductForm data-background-color="green"> </EditProductForm>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
-        <UploadImages> </UploadImages>
+        <UploadImagesProduct> </UploadImagesProduct>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { EditProductForm, UploadImages } from "@/pages";
+import { EditProductForm, UploadImagesProduct } from "@/pages";
 
 export default {
   components: {
     EditProductForm,
-    UploadImages
+    UploadImagesProduct
   }
 };
 </script>
