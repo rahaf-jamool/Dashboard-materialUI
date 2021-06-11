@@ -39,35 +39,35 @@ const routes = [
       },
       // Products
       {
-        path: "AllProducts",
+        path: "allproducts",
         name: "All Products",
         component: AllProducts,
       },
 
       {
-        path: "NewProduct",
+        path: "newproduct",
         name: "New Product",
         component: NewProduct,
       },
 
       {
-        path: "Products/:id",
+        path: "products/:id",
         name: "Products",
         component: EditProduct,
       },
       // Stores
       {
-        path: "AllStores",
+        path: "allstores",
         name: "All Stores",
         component: AllStores,
       },
       {
-        path: "NewStore",
+        path: "newstore",
         name: "New Store",
         component: NewStore,
       },
       {
-        path: "Stores/:id",
+        path: "stores/:id",
         name: "Stores",
         component: EditStore,
       },
@@ -78,12 +78,12 @@ const routes = [
         component: StoreProducts,
       },
       {
-        path: "/Store/:id/NewProduct",
+        path: "/store/:id/newproduct",
         name: "New Product in_Store",
         component: NewProductStor,
       },
       {
-        path: "/Store/:id/product/:id_product",
+        path: "/store/:id/product/:id_product",
         name: "Edit Product in Store",
         component: EditProductStor,
       },
@@ -121,7 +121,7 @@ const routes = [
       },
       // Doctors
       {
-        path: "allDoctors",
+        path: "alldoctors",
         name: "allDoctors",
         component: AllDoctors,
       },
