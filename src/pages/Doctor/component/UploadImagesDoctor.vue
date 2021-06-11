@@ -67,7 +67,7 @@ export default {
         "http://edalili.e-dalely.com/public/api/categories/create",
         this.categories
       );
-      //console.log(JSON.stringify(this.categories));
+      console.log(JSON.stringify(this.categories));
       this.$router.push({ name: "categories_dash" });
     },
     // handleImages(Imgs) {

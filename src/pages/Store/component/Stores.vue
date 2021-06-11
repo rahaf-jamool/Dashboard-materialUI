@@ -2,7 +2,7 @@
   <div class="md-layout">
     <div class="md-layout-item md-small-size-100 md-size-20">{{ id }}</div>
     <div class="md-layout-item md-small-size-100 md-size-20">
-      <router-link :to="`Store/${id}/Products`">{{ title }}</router-link>
+      <router-link :to="`store/${id}/Products`">{{ title }}</router-link>
     </div>
     <div class="md-layout-item md-small-size-100 md-size-20">
       <select class="sections">
