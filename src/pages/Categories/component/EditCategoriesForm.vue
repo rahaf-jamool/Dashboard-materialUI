@@ -128,7 +128,7 @@ export default {
         `http://edalili.e-dalely.com/public/api/categories/update/${this.CategoryID.id}`,
         this.categories
       );
-      //console.log(JSON.stringify(this.categories));
+      console.log(JSON.stringify(this.categories));
       this.$router.push({ name: "allCategories" });
     },
   },

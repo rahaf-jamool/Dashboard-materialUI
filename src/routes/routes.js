@@ -73,7 +73,7 @@ const routes = [
       },
       // Stores => Products
       {
-        path: "Store/:id/Products",
+        path: "store/:id/Products",
         name: "Store/Products",
         component: StoreProducts,
       },
