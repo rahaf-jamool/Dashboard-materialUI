@@ -121,7 +121,7 @@ export default {
   methods: {
     postDoctor() {
       axios.post("/api/doctor/create", this.doctors);
-      console.log(JSON.stringify(this.doctors));
+      //console.log(JSON.stringify(this.doctors));
       this.$router.push({ name: "allDoctors" });
     },
   },
