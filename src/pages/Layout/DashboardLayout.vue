@@ -11,11 +11,11 @@
         <md-icon>dashboard</md-icon>
         <p>Dashboard</p>
       </sidebar-link>
-      <sidebar-link to="/AllProducts">
+      <sidebar-link to="/allproducts">
         <md-icon>person</md-icon>
         <p>All Products</p>
       </sidebar-link>
-      <sidebar-link to="/AllStores">
+      <sidebar-link to="/allstores">
         <md-icon>person</md-icon>
         <p>All Stores</p>
       </sidebar-link>
@@ -27,7 +27,7 @@
         <md-icon>person</md-icon>
         <p>All Brands</p>
       </sidebar-link>
-      <sidebar-link to="/allDoctors">
+      <sidebar-link to="/alldoctors">
         <md-icon>person</md-icon>
         <p>All Doctors</p>
       </sidebar-link>

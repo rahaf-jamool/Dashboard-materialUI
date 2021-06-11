@@ -57,7 +57,7 @@
             :id="items.id"
             :name="items.name"
             :image="items.image"
-            :section_id="items.Description"
+            :Description="items.Description"
             :is_active="items.is_active"
             style="margin: 10px 0"
           >
