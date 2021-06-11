@@ -7,9 +7,9 @@
   >
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
-        <div class="logo-img">
-          <img :src="imgLogo" alt="" />
-        </div>
+       
+          <img src="logo.jpeg" style="border-radius: 20%;"/>
+        
       </a>
 
       <a
@@ -17,7 +17,7 @@
         target="_blank"
         class="simple-text logo-normal"
       >
-        {{ title }}
+        E _ daliliy
       </a>
     </div>
     <div class="sidebar-wrapper">

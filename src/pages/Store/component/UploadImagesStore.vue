@@ -123,7 +123,7 @@ export default {
         this.products
       );
 
-      console.log(JSON.stringify(this.products));
+     // console.log(JSON.stringify(this.products));
     },
     handleImages(Imgs) {
       this.products.image = "http://localhost:8081/img/" + Imgs[0].name;
@@ -135,7 +135,7 @@ export default {
           is_cover: i === 0 ? 1 : 0,
         };
       }
-      console.log(this.products.images);
+      //console.log(this.products.images);
     },
   },
 

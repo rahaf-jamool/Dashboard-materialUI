@@ -135,7 +135,7 @@ export default {
           is_cover: i === 0 ? 1 : 0,
         };
       }
-      console.log(this.products.images);
+     // console.log(this.products.images);
     },
   },
 

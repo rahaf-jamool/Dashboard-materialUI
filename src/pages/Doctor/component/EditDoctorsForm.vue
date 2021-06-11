@@ -124,7 +124,7 @@ export default {
         "http://edalili.e-dalely.com/public/api/doctor/update/",
         this.doctors
       );
-      console.log(JSON.stringify(this.doctors));
+     // console.log(JSON.stringify(this.doctors));
       this.$router.push({ name: "allDoctors" });
     },
   },

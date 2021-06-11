@@ -118,7 +118,7 @@ export default {
         `http://edalili.e-dalely.com/public/api/brands/update/${this.BrandID.id}`,
         this.Brands
       );
-      console.log(JSON.stringify(this.Brands));
+      //console.log(JSON.stringify(this.Brands));
       this.$router.push({ name: "allBrands" });
     },
   },
