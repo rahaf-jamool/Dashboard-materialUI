@@ -2,22 +2,22 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-size-66">
-        <CreateProductForm data-background-color="green"> </CreateProductForm>
+        <CreateStoreForm data-background-color="green"> </CreateStoreForm>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
-        <UploadImages> </UploadImages>
+        <UploadImagesStore> </UploadImagesStore>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import { CreateProductForm, UploadImages } from "@/pages";
+import { CreateStoreForm, UploadImagesStore } from "@/pages";
 
 export default {
   components: {
-    CreateProductForm,
-    UploadImages
+    CreateStoreForm,
+    UploadImagesStore
   }
 };
 </script>
