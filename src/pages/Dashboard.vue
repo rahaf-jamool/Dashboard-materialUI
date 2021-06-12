@@ -86,8 +86,8 @@
           </template>
 
           <template slot="content">
-            <p class="category">Revenue</p>
-            <h3 class="title">$34,245</h3>
+            <p class="category">Stores</p>
+            <h3 class="title">{{ItemsCountStore}}</h3>
           </template>
 
           <template slot="footer">
@@ -127,12 +127,12 @@
       >
         <stats-card data-background-color="red">
           <template slot="header">
-            <md-icon>info_outline</md-icon>
+            <md-icon>medication</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Fixed Issues</p>
-            <h3 class="title">75</h3>
+            <p class="category">Doctors</p>
+            <h3 class="title">{{ItemsCountDoctor}}</h3>
           </template>
 
           <template slot="footer">
@@ -204,6 +204,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 import {
   StatsCard,
   ChartCard,
@@ -307,6 +308,22 @@ export default {
         ]
       }
     };
-  }
+  },
+  computed: {
+    ...mapState({
+      Stores: (state) => state.Stores.Stores,
+      doctors: (state) => state.Doctors.doctors,
+    }),
+    ItemsCountStore () {
+         return Object.keys(this.Stores).length
+     },
+     ItemsCountDoctor () {
+         return Object.keys(this.doctors).length
+     }
+  },
+  mounted() {
+    this.$store.dispatch("loadStores");
+    this.$store.dispatch("loadDoctors");
+  },
 };
 </script>
