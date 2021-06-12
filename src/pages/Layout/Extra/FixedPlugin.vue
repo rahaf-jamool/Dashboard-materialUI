@@ -29,27 +29,7 @@
           </a>
         </li>
 
-        <li class="button-container">
-          <div class="">
-            <md-button
-              class="md-success md-block"
-              :href="freeUrl"
-              target="_blank"
-              >Free Download</md-button
-            >
-          </div>
-        </li>
 
-        <li class="button-container">
-          <div class="">
-            <md-button
-              class="md-block md-primary"
-              :href="documentationLink"
-              target="_blank"
-              >Documentation</md-button
-            >
-          </div>
-        </li>
 
         <li class="header-title d-flex justify-content-center">
           Thank you for sharing!
