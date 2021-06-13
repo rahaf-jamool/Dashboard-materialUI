@@ -25,7 +25,10 @@ import EditProductStor from "@/pages/Product_Store/View/EditProductStor.vue";
 import AllDoctors from "@/pages/Doctor/View/AllDoctors.vue";
 import NewDoctors from "@/pages/Doctor/View/NewDoctors.vue";
 import EditDoctors from "@/pages/Doctor/View/EditDoctors.vue";
-
+//Restaurant
+import AllRestaurant from "@/pages/Restaurant/View/AllRestaurant.vue";
+import NewRestaurant from "@/pages/Restaurant/View/NewRestaurant.vue";
+import EditRestaurant from "@/pages/Restaurant/View/EditRestaurant.vue";
 const routes = [
   {
     path: "/",
@@ -134,6 +137,22 @@ const routes = [
         path: "editdoctors/:id",
         name: "editdoctors",
         component: EditDoctors,
+      },
+        //Restaurant
+      {
+        path: "allrestaurant",
+        name: "AllRestaurant",
+        component: AllRestaurant,
+      },
+      {
+        path: "newrestaurant",
+        name: "NewRestaurant",
+        component: NewRestaurant,
+      },
+      {
+        path: "editrestaurant",
+        name: "EditRestaurant",
+        component: EditRestaurant,
       },
     ],
   },
