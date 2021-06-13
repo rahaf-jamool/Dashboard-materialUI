@@ -32,7 +32,11 @@ import Doctors from "../pages/Doctor/component/Doctors.vue";
 import NewDoctorsForm from "../pages/Doctor/component/NewDoctorsForm.vue";
 import EditDoctorsForm from "../pages/Doctor/component/EditDoctorsForm.vue";
 import UploadImagesDoctor from "../pages/Doctor/component/UploadImagesDoctor.vue";
-
+//Restaurant
+import Restaurant from "../pages/Restaurant/component/Restaurant.vue";
+import NewRestaurantForm from "../pages/Restaurant/component/NewRestaurantForm.vue";
+import EditRestaurantForm from "../pages/Restaurant/component/EditRestaurantForm.vue";
+import UploadImagesRestaurant from "../pages/Restaurant/component/UploadImagesRestaurant.vue";
 export {
   UploadImagesStore,
   UpImagStrProd,
@@ -58,6 +62,10 @@ export {
   Doctors,
   NewDoctorsForm,
   EditDoctorsForm,
+  Restaurant,
+  NewRestaurantForm,
+  EditRestaurantForm,
+  UploadImagesRestaurant
 };
 
 // export { UploadImages, EditProductForm, CreateProductForm, Products, Stores, CreateStoreForm, EditStoreForm, StoreProd, CreateProductStor, EditProductStor };

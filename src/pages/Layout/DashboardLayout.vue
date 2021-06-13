@@ -31,6 +31,10 @@
         <md-icon>person</md-icon>
         <p>All Doctors</p>
       </sidebar-link>
+      <sidebar-link to="/allrestaurant">
+        <md-icon>person</md-icon>
+        <p>All Restaurant</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
