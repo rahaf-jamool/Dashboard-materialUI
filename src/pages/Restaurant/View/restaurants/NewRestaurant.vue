@@ -2,7 +2,7 @@
   <div class="content">
     <div class="md-layout">
       <div class="md-layout-item md-medium-size-100 md-size-66">
-        <EditRestaurantForm data-background-color="green"> </EditRestaurantForm>
+        <NewRestaurantForm data-background-color="green"> </NewRestaurantForm>
       </div>
       <div class="md-layout-item md-medium-size-100 md-size-33">
         <UploadImagesRestaurant> </UploadImagesRestaurant>
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import EditRestaurantForm from "../component/EditRestaurantForm";
-import UploadImagesRestaurant from "../component/UploadImagesRestaurant";
+import NewRestaurantForm from "../../component/restaurants/NewRestaurantForm";
+import UploadImagesRestaurant from "../../component/restaurants/UploadImagesRestaurant";
 export default {
-  name: "EditRestaurant",
-  components: {UploadImagesRestaurant, EditRestaurantForm}
+  name: "NewRestaurant",
+  components: {UploadImagesRestaurant, NewRestaurantForm}
 }
 </script>
 
