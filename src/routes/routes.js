@@ -26,9 +26,12 @@ import AllDoctors from "@/pages/Doctor/View/AllDoctors.vue";
 import NewDoctors from "@/pages/Doctor/View/NewDoctors.vue";
 import EditDoctors from "@/pages/Doctor/View/EditDoctors.vue";
 //Restaurant
-import AllRestaurant from "@/pages/Restaurant/View/AllRestaurant.vue";
-import NewRestaurant from "@/pages/Restaurant/View/NewRestaurant.vue";
-import EditRestaurant from "@/pages/Restaurant/View/EditRestaurant.vue";
+import AllRestaurant from "@/pages/Restaurant/View/restaurants/AllRestaurant.vue";
+import NewRestaurant from "@/pages/Restaurant/View/restaurants/NewRestaurant.vue";
+import EditRestaurant from "@/pages/Restaurant/View/restaurants/EditRestaurant.vue";
+//Restaurant meals
+import NewMeals from "@/pages/Restaurant/View/Meals/NewMeals.vue";
+import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
 const routes = [
   {
     path: "/",
@@ -138,7 +141,7 @@ const routes = [
         name: "editdoctors",
         component: EditDoctors,
       },
-        //Restaurant
+      //Restaurant
       {
         path: "allrestaurant",
         name: "AllRestaurant",
@@ -153,6 +156,17 @@ const routes = [
         path: "editrestaurant",
         name: "EditRestaurant",
         component: EditRestaurant,
+      },
+      // Restaurant meals
+      {
+        path: "newmeals",
+        name: "NewMeals",
+        component: NewMeals,
+      },
+      {
+        path: "editmeals",
+        name: "EditMeals",
+        component: EditMeals,
       },
     ],
   },
