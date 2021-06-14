@@ -32,7 +32,18 @@ import Doctors from "../pages/Doctor/component/Doctors.vue";
 import NewDoctorsForm from "../pages/Doctor/component/NewDoctorsForm.vue";
 import EditDoctorsForm from "../pages/Doctor/component/EditDoctorsForm.vue";
 import UploadImagesDoctor from "../pages/Doctor/component/UploadImagesDoctor.vue";
-
+//Restaurant
+import NewRestaurantForm from "../pages/Restaurant/component/restaurants/NewRestaurantForm.vue";
+import EditRestaurantForm from "../pages/Restaurant/component/restaurants/EditRestaurantForm.vue";
+import UploadImagesRestaurant from "../pages/Restaurant/component/restaurants/UploadImagesRestaurant.vue";
+// Restaurant meals
+import NewMealsForm from "../pages/Restaurant/component/Meals/NewMealsForm.vue";
+import EditMealsForm from "../pages/Restaurant/component/Meals/EditMealsForm.vue";
+import UploadImagesMeals from "../pages/Restaurant/component/Meals/UploadImagesMeals.vue";
+// Restaurant user
+import NewUserForm from "../pages/Restaurant/component/Users/NewUserForm.vue";
+import EditUserForm from "../pages/Restaurant/component/Users/EditUserForm.vue";
+import UploadImagesUser from "../pages/Restaurant/component/Users/UploadImagesUser.vue";
 export {
   UploadImagesStore,
   UpImagStrProd,
@@ -58,6 +69,15 @@ export {
   Doctors,
   NewDoctorsForm,
   EditDoctorsForm,
+  NewRestaurantForm,
+  EditRestaurantForm,
+  UploadImagesRestaurant,
+  NewMealsForm,
+  EditMealsForm,
+  UploadImagesMeals,
+  NewUserForm,
+  EditUserForm,
+  UploadImagesUser
 };
 
 // export { UploadImages, EditProductForm, CreateProductForm, Products, Stores, CreateStoreForm, EditStoreForm, StoreProd, CreateProductStor, EditProductStor };

@@ -86,8 +86,8 @@
           </template>
 
           <template slot="content">
-            <p class="category">Revenue</p>
-            <h3 class="title">$34,245</h3>
+            <p class="category">Stores</p>
+            <h3 class="title">{{ItemsCountStore}}</h3>
           </template>
 
           <template slot="footer">
@@ -107,10 +107,9 @@
           </template>
 
           <template slot="content">
-            <p class="category">Used Space</p>
+            <p class="category">Products</p>
             <h3 class="title">
-              49/50
-              <small>GB</small>
+              {{ItemsCountProducts}}
             </h3>
           </template>
 
@@ -127,12 +126,12 @@
       >
         <stats-card data-background-color="red">
           <template slot="header">
-            <md-icon>info_outline</md-icon>
+            <md-icon>medication</md-icon>
           </template>
 
           <template slot="content">
-            <p class="category">Fixed Issues</p>
-            <h3 class="title">75</h3>
+            <p class="category">Doctors</p>
+            <h3 class="title">{{ItemsCountDoctor}}</h3>
           </template>
 
           <template slot="footer">
@@ -204,7 +203,15 @@
 </template>
 
 <script>
-import { StatsCard, ChartCard, NavTabsCard } from "@/components";
+import { mapState } from "vuex";
+import {
+  StatsCard,
+  ChartCard,
+  NavTabsCard,
+  NavTabsTable,
+  OrderedTable
+} from "@/components";
+
 export default {
   components: { StatsCard, ChartCard, NavTabsCard },
   data() {
@@ -296,6 +303,27 @@ export default {
         ],
       },
     };
+  },
+  computed: {
+    ...mapState({
+      Stores: (state) => state.Stores.Stores,
+      Product: (state) => state.All.Product,
+      doctors: (state) => state.Doctors.doctors,
+    }),
+    ItemsCountStore () {
+         return Object.keys(this.Stores).length
+     },
+    ItemsCountProducts () {
+         return Object.keys(this.Product).length
+     },
+     ItemsCountDoctor () {
+         return Object.keys(this.doctors).length
+     }
+  },
+  mounted() {
+    this.$store.dispatch("loadStores");
+    this.$store.dispatch("loadProducts");
+    this.$store.dispatch("loadDoctors");
   },
 };
 </script>

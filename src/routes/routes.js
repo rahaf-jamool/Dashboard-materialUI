@@ -1,5 +1,6 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
+
 import Dashboard from "@/pages/Dashboard.vue";
 // Products
 import AllProducts from "@/pages/Product/View/AllProducts.vue";
@@ -25,11 +26,27 @@ import EditProductStor from "@/pages/Product_Store/View/EditProductStor.vue";
 import AllDoctors from "@/pages/Doctor/View/AllDoctors.vue";
 import NewDoctors from "@/pages/Doctor/View/NewDoctors.vue";
 import EditDoctors from "@/pages/Doctor/View/EditDoctors.vue";
+//Restaurant
+import AllRestaurant from "@/pages/Restaurant/View/restaurants/AllRestaurant.vue";
+import NewRestaurant from "@/pages/Restaurant/View/restaurants/NewRestaurant.vue";
+import EditRestaurant from "@/pages/Restaurant/View/restaurants/EditRestaurant.vue";
+//Restaurant meals
+import AllMeals from "@/pages/Restaurant/View/Meals/AllMeals.vue"
+import NewMeals from "@/pages/Restaurant/View/Meals/NewMeals.vue";
+import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
+//Restaurant users
+import AllUsers from "@/pages/Restaurant/View/Users/AllUsers.vue"
+import NewUser from "@/pages/Restaurant/View/Users/NewUser.vue";
+import EditUser from "@/pages/Restaurant/View/Users/EditUser.vue";
 
 const routes = [
-  {
+ {
+  path: "/",
+  name: 'Sign',
+  component: () => import("@/Sign/Sign.vue"),
+ },{
     path: "/",
-    component: DashboardLayout,
+    component:  DashboardLayout ,
     redirect: "/dashboard",
     children: [
       {
@@ -134,6 +151,54 @@ const routes = [
         path: "editdoctors/:id",
         name: "editdoctors",
         component: EditDoctors,
+      },
+      //Restaurant
+      {
+        path: "allrestaurant",
+        name: "AllRestaurant",
+        component: AllRestaurant,
+      },
+      {
+        path: "newrestaurant",
+        name: "NewRestaurant",
+        component: NewRestaurant,
+      },
+      {
+        path: "editrestaurant",
+        name: "EditRestaurant",
+        component: EditRestaurant,
+      },
+      // Restaurant meals
+      {
+        path: "allmeals",
+        name: "AllMeals",
+        component: AllMeals,
+      },
+      {
+        path: "newmeals",
+        name: "NewMeals",
+        component: NewMeals,
+      },
+      {
+        path: "editmeals",
+        name: "EditMeals",
+        component: EditMeals,
+      },
+        //Restaurant user
+      {
+        path: "allusers",
+        name: "AllUsers",
+        component: AllUsers,
+      },
+      {
+        path: "newuser",
+        name: "NewUser",
+        component: NewUser,
+      },
+      {
+        path: "edituser",
+        name: "EditUser",
+        component: EditUser,
       },
     ],
   },
