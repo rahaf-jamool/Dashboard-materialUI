@@ -1,5 +1,6 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
+
 import Dashboard from "@/pages/Dashboard.vue";
 // Products
 import AllProducts from "@/pages/Product/View/AllProducts.vue";
@@ -37,10 +38,15 @@ import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
 import AllUsers from "@/pages/Restaurant/View/Users/AllUsers.vue"
 import NewUser from "@/pages/Restaurant/View/Users/NewUser.vue";
 import EditUser from "@/pages/Restaurant/View/Users/EditUser.vue";
+
 const routes = [
-  {
+ {
+  path: "/",
+  name: 'Sign',
+  component: () => import("@/Sign/Sign.vue"),
+ },{
     path: "/",
-    component: DashboardLayout,
+    component:  DashboardLayout ,
     redirect: "/dashboard",
     children: [
       {
