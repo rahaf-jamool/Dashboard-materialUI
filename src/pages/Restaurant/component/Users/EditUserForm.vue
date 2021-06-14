@@ -2,7 +2,7 @@
   <form>
     <md-card>
       <md-card-header :data-background-color="dataBackgroundColor">
-        <h4 class="title">New Meals</h4>
+        <h4 class="title">Update Users</h4>
 
         <p class="category">Complete your profile</p>
       </md-card-header>
@@ -24,7 +24,7 @@
             </md-field>
           </div>
           <div class="md-layout-item md-small-size-100 md-size-33">
-            <md-button>Add</md-button>
+            <md-button>Update</md-button>
           </div>
         </div>
       </md-card-content>
@@ -34,6 +34,10 @@
 
 <script>
 export default {
-  name: "NewMealsForm",
-};
+  name: "EditUserForm"
+}
 </script>
+
+<style scoped>
+
+</style>

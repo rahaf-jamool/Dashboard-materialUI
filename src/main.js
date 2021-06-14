@@ -34,7 +34,8 @@ import GlobalDirectives from "./globalDirectives";
 
 // MaterialDashboard plugin
 import MaterialDashboard from "./material-dashboard";
-
+// import Pagination from '@material-ui/lab/Pagination';
+// import {Pagination} from '@/components'
 import Chartist from "chartist";
 
 // configure router
@@ -49,7 +50,7 @@ Vue.use(VueRouter);
 Vue.use(MaterialDashboard);
 Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
-
+// Vue.use(Pagination)
 
 axios.defaults.baseURL = 'http://edalili.e-dalely.com/public';
 
