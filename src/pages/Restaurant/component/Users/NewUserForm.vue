@@ -2,7 +2,7 @@
   <form>
     <md-card>
       <md-card-header :data-background-color="dataBackgroundColor">
-        <h4 class="title">New Meals</h4>
+        <h4 class="title">New Users</h4>
 
         <p class="category">Complete your profile</p>
       </md-card-header>
@@ -34,6 +34,10 @@
 
 <script>
 export default {
-  name: "NewMealsForm",
-};
+  name: "NewUserForm"
+}
 </script>
+
+<style scoped>
+
+</style>

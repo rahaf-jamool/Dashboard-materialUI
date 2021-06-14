@@ -30,8 +30,13 @@ import AllRestaurant from "@/pages/Restaurant/View/restaurants/AllRestaurant.vue
 import NewRestaurant from "@/pages/Restaurant/View/restaurants/NewRestaurant.vue";
 import EditRestaurant from "@/pages/Restaurant/View/restaurants/EditRestaurant.vue";
 //Restaurant meals
+import AllMeals from "@/pages/Restaurant/View/Meals/AllMeals.vue"
 import NewMeals from "@/pages/Restaurant/View/Meals/NewMeals.vue";
 import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
+//Restaurant users
+import AllUsers from "@/pages/Restaurant/View/Users/AllUsers.vue"
+import NewUser from "@/pages/Restaurant/View/Users/NewUser.vue";
+import EditUser from "@/pages/Restaurant/View/Users/EditUser.vue";
 const routes = [
   {
     path: "/",
@@ -159,6 +164,11 @@ const routes = [
       },
       // Restaurant meals
       {
+        path: "allmeals",
+        name: "AllMeals",
+        component: AllMeals,
+      },
+      {
         path: "newmeals",
         name: "NewMeals",
         component: NewMeals,
@@ -167,6 +177,22 @@ const routes = [
         path: "editmeals",
         name: "EditMeals",
         component: EditMeals,
+      },
+        //Restaurant user
+      {
+        path: "allusers",
+        name: "AllUsers",
+        component: AllUsers,
+      },
+      {
+        path: "newuser",
+        name: "NewUser",
+        component: NewUser,
+      },
+      {
+        path: "edituser",
+        name: "EditUser",
+        component: EditUser,
       },
     ],
   },

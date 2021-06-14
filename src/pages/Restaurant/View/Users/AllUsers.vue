@@ -1,18 +1,16 @@
 <template>
   <div>
-  <Tabs></Tabs>
-<!--  <div class="content md-layout md-gutter">-->
-<!--    <form class="md-layout-item md-size-65 md-small-size-100">-->
+    <Tabs></Tabs>
     <form class="all">
       <md-card>
         <md-card-header :data-background-color="'purple'">
-          <p class="category">All your Restaurant</p>
+          <p class="category">All your Users</p>
 
-          <div color="primary">
-            <router-link :to="`newrestaurant`"
-              ><button>
-                <i class="fa fa-plus"></i> &nbsp;&nbsp;New Restaurant
-              </button></router-link
+          <div>
+            <router-link :to="`newuser`"
+            ><button>
+              <i class="fa fa-plus"></i> &nbsp;&nbsp;New Users
+            </button></router-link
             >
           </div>
         </md-card-header>
@@ -32,34 +30,31 @@
               <md-table-cell md-numeric><md-field>1</md-field></md-table-cell>
               <md-table-cell><md-field>Shawna Dubbin</md-field></md-table-cell>
               <md-table-cell
-                ><md-field>sdubbin0@geocities.com</md-field></md-table-cell
+              ><md-field>sdubbin0@geocities.com</md-field></md-table-cell
               >
               <md-table-cell><md-field>Male</md-field></md-table-cell>
               <md-table-cell
-                ><router-link :to="`editrestaurant`">
-                  <i class="fas fa-edit" style="margin: 0 10px;"></i>
-                </router-link>
+              ><router-link :to="`edituser`">
+                <i class="fas fa-edit" style="margin: 0 10px;"></i>
+              </router-link>
 
                 <i class="fa fa-trash"></i
-              ></md-table-cell>
+                ></md-table-cell>
             </md-table-row>
           </md-table>
+          <!-- loop products -->
         </md-card-content>
       </md-card>
     </form>
-    <!-- meals -->
-<!--    <form class="md-layout-item md-size-35 md-small-size-100">-->
-
-<!--  </div>-->
-</div>
+  </div>
 </template>
 
 <script>
 import Tabs from "../../component/Tabs";
 export default {
-  name: "AllRestaurant",
-  components: {Tabs},
-};
+  name: "AllUsers",
+  components: {Tabs}
+}
 </script>
 
 <style lang="scss" scoped>
@@ -67,5 +62,3 @@ export default {
   margin-top: 20px;
 }
 </style>
-
-
