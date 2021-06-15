@@ -38,13 +38,15 @@ import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
 import AllUsers from "@/pages/Restaurant/View/Users/AllUsers.vue"
 import NewUser from "@/pages/Restaurant/View/Users/NewUser.vue";
 import EditUser from "@/pages/Restaurant/View/Users/EditUser.vue";
-
+// Offer 
+import allOffers from "@/pages/Offers/View/allOffers.vue";
 const routes = [
+  {
+    path: "/",
+    name: 'Sign',
+    component: () => import("@/Sign/Sign.vue"),
+  },
  {
-  path: "/",
-  name: 'Sign',
-  component: () => import("@/Sign/Sign.vue"),
- },{
     path: "/",
     component:  DashboardLayout ,
     redirect: "/dashboard",
@@ -200,6 +202,12 @@ const routes = [
         name: "EditUser",
         component: EditUser,
       },
+      // Offers 
+      {
+      path: "allOffers",
+      name: "All Offers",
+      component: allOffers,
+      }
     ],
   },
 ];
