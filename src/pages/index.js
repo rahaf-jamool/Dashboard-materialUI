@@ -44,7 +44,10 @@ import UploadImagesMeals from "../pages/Restaurant/component/Meals/UploadImagesM
 import NewUserForm from "../pages/Restaurant/component/Users/NewUserForm.vue";
 import EditUserForm from "../pages/Restaurant/component/Users/EditUserForm.vue";
 import UploadImagesUser from "../pages/Restaurant/component/Users/UploadImagesUser.vue";
+// Offers
+import offers from "../pages/Offers/component/offers.vue";
 export {
+  offers,
   UploadImagesStore,
   UpImagStrProd,
   UploadImagesCategory,

@@ -35,6 +35,10 @@
         <md-icon>person</md-icon>
         <p>All Restaurant</p>
       </sidebar-link>
+      <sidebar-link to="/allOffers">
+        <md-icon>person</md-icon>
+        <p>All Offers</p>
+      </sidebar-link>
     </side-bar>
 
     <div class="main-panel">
