@@ -38,6 +38,10 @@ import EditMeals from "@/pages/Restaurant/View/Meals/EditMeals.vue";
 import AllUsers from "@/pages/Restaurant/View/Users/AllUsers.vue"
 import NewUser from "@/pages/Restaurant/View/Users/NewUser.vue";
 import EditUser from "@/pages/Restaurant/View/Users/EditUser.vue";
+//Restauran Menus
+import AllMenu from "@/pages/Restaurant/View/Menus/AllMenu.vue"
+import NewMenu from "@/pages/Restaurant/View/Menus/NewMenu.vue";
+import EditMenu from "@/pages/Restaurant/View/Menus/EditMenu.vue";
 // Offer 
 import allOffers from "@/pages/Offers/View/allOffers.vue";
 const routes = [
@@ -201,6 +205,22 @@ const routes = [
         path: "edituser",
         name: "EditUser",
         component: EditUser,
+      },
+        //Restaurant Menu
+      {
+        path: "allmenus",
+        name: "AllMenu",
+        component: AllMenu,
+      },
+      {
+        path: "newmenu",
+        name: "NewMenu",
+        component: NewMenu,
+      },
+      {
+        path: "editmenu",
+        name: "EditMenu",
+        component: EditMenu,
       },
       // Offers 
       {
