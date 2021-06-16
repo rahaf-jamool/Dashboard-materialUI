@@ -44,6 +44,10 @@ import UploadImagesMeals from "../pages/Restaurant/component/Meals/UploadImagesM
 import NewUserForm from "../pages/Restaurant/component/Users/NewUserForm.vue";
 import EditUserForm from "../pages/Restaurant/component/Users/EditUserForm.vue";
 import UploadImagesUser from "../pages/Restaurant/component/Users/UploadImagesUser.vue";
+//Restaurant Menu
+import NewMenuForm from "../pages/Restaurant/component/Menus/NewMenuForm.vue";
+import EditMenuForm from "../pages/Restaurant/component/Menus/EditMenuForm.vue";
+import UploadImagesMenu from "../pages/Restaurant/component/Menus/UploadImagesMenu.vue";
 // Offers
 import offers from "../pages/Offers/component/offers.vue";
 export {
@@ -80,7 +84,10 @@ export {
   UploadImagesMeals,
   NewUserForm,
   EditUserForm,
-  UploadImagesUser
+  UploadImagesUser,
+  NewMenuForm,
+  EditMenuForm,
+  UploadImagesMenu
 };
 
 // export { UploadImages, EditProductForm, CreateProductForm, Products, Stores, CreateStoreForm, EditStoreForm, StoreProd, CreateProductStor, EditProductStor };
