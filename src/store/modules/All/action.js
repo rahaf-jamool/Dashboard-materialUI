@@ -93,8 +93,8 @@ export const loadProducts = ({ commit }) => {
     axios
         .get(`/api/products/getAll?lang=${lang}`)
         .then((res) => {
-            console.warn('Product :', res.data.Products);
-            let Product = res.data.Products;
+            console.warn('Product :', res.data.Products.data);
+            let Product = res.data.Products.data;
             commit('SET_Products', Product);
         })
         .catch(function (error) {

@@ -52,6 +52,7 @@ Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 // Vue.use(Pagination)
 
+
 axios.defaults.baseURL = 'http://edalili.e-dalely.com/public';
 
 

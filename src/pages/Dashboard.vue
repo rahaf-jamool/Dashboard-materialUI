@@ -116,7 +116,7 @@
           <template slot="footer">
             <div class="stats">
               <md-icon class="text-danger">warning</md-icon>
-              <a href="#pablo">Get More Space...</a>
+           Get More Space...
             </div>
           </template>
         </stats-card>
@@ -172,7 +172,7 @@
             <p class="category">New employees on 15th September, 2016</p>
           </md-card-header>
           <md-card-content>
-            <ordered-table table-header-color="orange"></ordered-table>
+            
           </md-card-content>
         </md-card>
       </div>
@@ -184,15 +184,15 @@
             <span class="md-nav-tabs-title">Tasks:</span>
             <md-tabs class="md-success" md-alignment="left">
               <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
-                <nav-tabs-table></nav-tabs-table>
+               
               </md-tab>
 
               <md-tab id="tab-pages" md-label="Website" md-icon="code">
-                <nav-tabs-table></nav-tabs-table>
+                
               </md-tab>
 
               <md-tab id="tab-posts" md-label="server" md-icon="cloud">
-                <nav-tabs-table></nav-tabs-table>
+               
               </md-tab>
             </md-tabs>
           </template>
@@ -208,8 +208,6 @@ import {
   StatsCard,
   ChartCard,
   NavTabsCard,
-  NavTabsTable,
-  OrderedTable
 } from "@/components";
 
 export default {

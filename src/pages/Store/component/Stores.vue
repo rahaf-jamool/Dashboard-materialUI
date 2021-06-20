@@ -5,12 +5,14 @@
       <router-link :to="`store/${id}/Products`">{{ title }}</router-link>
     </div>
     <div class="md-layout-item md-small-size-100 md-size-20">
-      <select class="sections">
-        <option v-for="item in section" :key="item.ps">
-          {{ item.name }}
-        </option>
-      </select>
-    </div>
+      <div class="dropdown">
+  <button class="dropbtn">Show </button>
+  <div class="dropdown-content">
+  <span href="#" v-for="item in section" :key="item.ps"> {{ item.name }}</span>
+  </div>
+</div>
+
+    </div> 
 
     <div class="md-layout-item md-small-size-100 md-size-20">
       <i v-if="is_appear == 'Appear'" class="fa fa-check"></i>
@@ -49,5 +51,44 @@ export default {
 <style>
 .md-field:not(.md-disabled)::after {
   display: none;
+}
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content span:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 </style>

@@ -9,8 +9,8 @@ export const loadStores = ({ commit }) => {
     axios
         .get(`/api/stores/getAll?lang=${lang}`)
         .then((res) => {
-            console.warn('Store :', res.data.Stores);
-            let Stores = res.data.Stores;
+            console.warn('Store :', res.data.Stores.data);
+            let Stores = res.data.Stores.data;
             commit('SET_Stores', Stores);
         })
         .catch(function (error) {
