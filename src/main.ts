@@ -3,13 +3,22 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 
-// import GlobalDirectives from "@/globalDirectives";
-// import Chartist from 'chartist'
+// import GlobalDirectives from "./globalDirectives.js"
+// import material-dashboard from './material-dashboard.js'
+import Chartist from "chartist";
 
 // app.prototype.$Chartist = Chartist;
+// app.use(GlobalDirectives)
 
-createApp(App)
-  .use(store)
-  .use(router)
-  // .use(GlobalDirectives)
-  .mount("#app");
+const app = createApp({
+  App,
+  router,
+  store,
+  // GlobalDirectives,
+  data() {
+    return {
+      Chartist: Chartist,
+    };
+  },
+});
+app.mount("#app");
