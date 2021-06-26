@@ -43,7 +43,11 @@
 
     <div class="main-panel">
       <top-navbar></top-navbar>
-
+      <fixed-plugin
+        v-bind:color="sidebarBackground"
+        v-bind:image="sidebarBackgroundImage"
+      >
+      </fixed-plugin>
       <!-- <fixed-plugin
         :color.sync="sidebarBackground"
         :image.sync="sidebarBackgroundImage"

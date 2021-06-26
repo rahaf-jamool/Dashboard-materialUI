@@ -5,6 +5,11 @@ import { createRouter, createWebHistory } from "vue-router";
 // import Dashboard from "@/pages/Dashboard.vue";
 
 const routes = [
+  {
+    path: "/home",
+    name: "home",
+    component: () => import("@/Sign/home.vue"),
+  },
   // {
   //   path: "/",
   //   name: "Sign",
@@ -25,7 +30,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.baseURL),
   routes,
 });
 export default router;

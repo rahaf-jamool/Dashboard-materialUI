@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <!-- <div class="md-layout">
+    <div class="md-layout">
       <div
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-33"
       >
@@ -10,7 +10,7 @@
           :chart-type="'Line'"
           data-background-color="blue"
         >
-          <template slot="content">
+          <template v-slot:content>
             <h4 class="title">Daily Sales</h4>
             <p class="category">
               <span class="text-success"
@@ -20,7 +20,7 @@
             </p>
           </template>
 
-          <template slot="footer">
+          <template v-slot:footer>
             <div class="stats">
               <md-icon>access_time</md-icon>
               updated 4 minutes ago
@@ -38,14 +38,14 @@
           :chart-type="'Bar'"
           data-background-color="red"
         >
-          <template slot="content">
+          <template slot:content>
             <h4 class="title">Email Subscription</h4>
             <p class="category">
               Last Campaign Performance
             </p>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon>access_time</md-icon>
               updated 10 days ago
@@ -62,14 +62,14 @@
           :chart-type="'Line'"
           data-background-color="green"
         >
-          <template slot="content">
+          <template slot:content>
             <h4 class="title">Completed Tasks</h4>
             <p class="category">
               Last Campaign Performance
             </p>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon>access_time</md-icon>
               campaign sent 26 minutes ago
@@ -81,16 +81,16 @@
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
         <stats-card data-background-color="green">
-          <template slot="header">
+          <template slot:header>
             <md-icon>store</md-icon>
           </template>
 
-          <template slot="content">
+          <template slot:content>
             <p class="category">Stores</p>
             <h3 class="title">{{ItemsCountStore}}</h3>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon>date_range</md-icon>
               Last 24 Hours
@@ -102,18 +102,18 @@
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
         <stats-card data-background-color="orange">
-          <template slot="header">
+          <template slot:header>
             <md-icon>content_copy</md-icon>
           </template>
 
-          <template slot="content">
+          <template slot:content>
             <p class="category">Products</p>
             <h3 class="title">
               {{ItemsCountProducts}}
             </h3>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon class="text-danger">warning</md-icon>
               <a href="#pablo">Get More Space...</a>
@@ -125,16 +125,16 @@
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
         <stats-card data-background-color="red">
-          <template slot="header">
+          <template slot:header>
             <md-icon>medication</md-icon>
           </template>
 
-          <template slot="content">
+          <template slot:content>
             <p class="category">Doctors</p>
             <h3 class="title">{{ItemsCountDoctor}}</h3>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon>local_offer</md-icon>
               Tracked from Github
@@ -146,16 +146,16 @@
         class="md-layout-item md-medium-size-50 md-xsmall-size-100 md-size-25"
       >
         <stats-card data-background-color="blue">
-          <template slot="header">
+          <template slot:header>
             <i class="fab fa-twitter"></i>
           </template>
 
-          <template slot="content">
+          <template slot:content>
             <p class="category">Folowers</p>
             <h3 class="title">+245</h3>
           </template>
 
-          <template slot="footer">
+          <template slot:footer>
             <div class="stats">
               <md-icon>update</md-icon>
               Just Updated
@@ -180,7 +180,7 @@
         class="md-layout-item md-medium-size-100 md-xsmall-size-100 md-size-50"
       >
         <nav-tabs-card>
-          <template slot="content">
+          <template slot:content>
             <span class="md-nav-tabs-title">Tasks:</span>
             <md-tabs class="md-success" md-alignment="left">
               <md-tab id="tab-home" md-label="Bugs" md-icon="bug_report">
@@ -198,7 +198,7 @@
           </template>
         </nav-tabs-card>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 

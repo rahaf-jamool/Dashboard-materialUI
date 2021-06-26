@@ -14,11 +14,11 @@
     </li>
     <li>
       <drop-down>
-        <!-- <a slot="title" class="dropdown-toggle" data-toggle="dropdown"> -->
-        <i class="material-icons">notifications</i>
-        <span class="notification">5</span>
-        <p>Notifications</p>
-        <!-- </a> -->
+        <a slot:title class="dropdown-toggle" data-toggle="dropdown">
+          <i class="material-icons">notifications</i>
+          <span class="notification">5</span>
+          <p>Notifications</p>
+        </a>
         <ul class="dropdown-menu dropdown-menu-right">
           <li><a href="#">Mike John responded to your email</a></li>
           <li><a href="#">You have 5 new tasks</a></li>

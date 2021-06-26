@@ -31,9 +31,9 @@
               <p class="hidden-lg hidden-md">Dashboard</p>
             </md-list-item>
 
-            <!-- <md-list-item href="#/notifications" class="dropdown">
+            <md-list-item href="#/notifications" class="dropdown">
               <drop-down>
-                <a slot="title" class="dropdown-toggle" data-toggle="dropdown">
+                <a slot:title class="dropdown-toggle" data-toggle="dropdown">
                   <i class="material-icons">notifications</i>
                   <span class="notification">5</span>
                   <p class="hidden-lg hidden-md">Notifications</p>
@@ -46,7 +46,7 @@
                   <li><a href="#">Another One</a></li>
                 </ul>
               </drop-down>
-            </md-list-item> -->
+            </md-list-item>
 
             <li class="md-list-item">
               <a
@@ -58,15 +58,15 @@
               >
                 <div class="md-list-item-content">
                   <drop-down>
-                    <!-- <md-button
-                      slot="title"
+                    <md-button
+                      slot:title
                       class="md-button md-just-icon md-simple"
                       data-toggle="dropdown"
                     >
                       <md-icon>notifications</md-icon>
                       <span class="notification">5</span>
                       <p class="hidden-lg hidden-md">Notifications</p>
-                    </md-button> -->
+                    </md-button>
                     <ul class="dropdown-menu dropdown-menu-right">
                       <li><a href="#">Mike John responded to your email</a></li>
                       <li><a href="#">You have 5 new tasks</a></li>

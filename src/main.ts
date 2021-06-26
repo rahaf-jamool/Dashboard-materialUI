@@ -9,19 +9,23 @@ import axios from "axios";
 // Plugins
 import GlobalDirectives from "@/globalDirectives";
 import GlobalComponents from "@/globalComponents";
+
 // MaterialDashboard plugin
-// import materialDashboard from "./material-dashboard";
+import materialDashboard from "./material-dashboard";
+
 import Chartist from "chartist";
+
 axios.defaults.baseURL = "http://edalili.e-dalely.com/public";
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(process.env.baseURL),
   routes: [],
 });
 
 const app = createApp({
   App,
   routes,
+  store,
   data() {
     return {
       Chartist: Chartist,
@@ -31,6 +35,5 @@ const app = createApp({
 app.mount("#app");
 app.use(GlobalDirectives);
 app.use(GlobalComponents);
-// app.use(materialDashboard);
-app.use(store);
+app.use(materialDashboard);
 app.use(router);

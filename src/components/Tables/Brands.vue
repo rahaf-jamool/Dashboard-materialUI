@@ -12,7 +12,7 @@
 </template>
 
 <script lang="js">
-// import { mapState } from 'vuex';
+import { mapState } from 'vuex';
 export default {
   name: "Brands",
   data() {
@@ -20,20 +20,20 @@ export default {
       selected: [],
     };
   },
-  //   methods: {
-  //     onSelect: function(items) {
-  //       this.selected = items;
-  //     }
-  //   },
-  //   computed: {
-  //         ...mapState({
+    methods: {
+      onSelect: function(items) {
+        this.selected = items;
+      }
+    },
+    computed: {
+          ...mapState({
 
-  //             Brands: (state) => state.All.Brands,
-  //         }),
-  //     },
-  // mounted() {
-  //     this.$store.dispatch('loadBrands');
+              Brands: (state) => state.All.Brands,
+          }),
+      },
+  mounted() {
+      this.$store.dispatch('loadBrands');
 
-  // },
+  },
 };
 </script>
