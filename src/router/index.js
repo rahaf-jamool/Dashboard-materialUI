@@ -4,7 +4,25 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // import Dashboard from "@/pages/Dashboard.vue";
 
-const routes = [];
+const routes = [
+  // {
+  //   path: "/",
+  //   name: "Sign",
+  //   component: () => import("@/Sign/Sign.vue"),
+  // },
+  // {
+  //   path: "/",
+  //   component: DashboardLayout,
+  //   redirect: "/dashboard",
+  //   children: [
+  //     {
+  //       path: "dashboard",
+  //       name: "Dashboard",
+  //       component: Dashboard,
+  //     },
+  //   ],
+  // },
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
