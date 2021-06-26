@@ -14,7 +14,7 @@
     </router-link>
   </li>
 </template>
-<script lang="ts">
+<script lang="js">
 export default {
   inject: {
     autoClose: {
@@ -38,15 +38,15 @@ export default {
     },
   },
   methods: {
-    // hideSidebar() {
-    //   if (
-    //     this.autoClose &&
-    //     this.$sidebar &&
-    //     this.$sidebar.showSidebar === true
-    //   ) {
-    //     this.$sidebar.displaySidebar(false);
-    //   }
-    // }
+    hideSidebar() {
+      if (
+        this.autoClose &&
+        this.$sidebar &&
+        this.$sidebar.showSidebar === true
+      ) {
+        this.$sidebar.displaySidebar(false);
+      }
+    }
   },
 };
 </script>

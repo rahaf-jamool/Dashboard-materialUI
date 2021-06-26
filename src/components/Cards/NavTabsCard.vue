@@ -6,7 +6,7 @@
   </md-card>
 </template>
 
-<script lang="ts">
+<script lang="js">
 export default {
   name: "nav-tabs-card",
 };

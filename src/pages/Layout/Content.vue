@@ -3,7 +3,7 @@
     <router-view></router-view>
   </transition>
 </template>
-<script lang="ts">
+<script lang="js">
 export default {};
 </script>
 <style>

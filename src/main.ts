@@ -1,20 +1,18 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-
-// import GlobalDirectives from "./globalDirectives.js"
-// import material-dashboard from './material-dashboard.js'
+//store.js
+import store from "@/store";
+//axios
+import axios from "axios";
+// Plugins
+import GlobalDirectives from "@/globalDirectives";
+import GlobalComponents from "@/globalComponents";
+// MaterialDashboard plugin
+// import materialDashboard from "./material-dashboard";
 import Chartist from "chartist";
-
-// app.prototype.$Chartist = Chartist;
-// app.use(GlobalDirectives)
-
+axios.defaults.baseURL = "http://edalili.e-dalely.com/public";
 const app = createApp({
   App,
-  router,
-  store,
-  // GlobalDirectives,
   data() {
     return {
       Chartist: Chartist,
@@ -22,3 +20,7 @@ const app = createApp({
   },
 });
 app.mount("#app");
+app.use(GlobalDirectives);
+app.use(GlobalComponents);
+// app.use(materialDashboard);
+app.use(store);

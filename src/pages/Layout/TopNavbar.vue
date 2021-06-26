@@ -90,7 +90,7 @@
   </md-toolbar>
 </template>
 
-<script lang="ts">
+<script lang="js">
 export default {
   data() {
     return {
@@ -108,9 +108,9 @@ export default {
     };
   },
   methods: {
-    // toggleSidebar() {
-    //   this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
-    // }
+    toggleSidebar() {
+      this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
+    }
   },
 };
 </script>

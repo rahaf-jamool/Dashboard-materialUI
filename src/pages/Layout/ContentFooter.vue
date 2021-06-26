@@ -24,7 +24,7 @@
     </div>
   </footer>
 </template>
-<script lang="ts">
+<script lang="js">
 export default {};
 </script>
 <style></style>

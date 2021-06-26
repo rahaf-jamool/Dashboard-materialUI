@@ -35,7 +35,7 @@
     </div>
   </div>
 </template>
-<script lang="ts">
+<script lang="js">
 import SidebarLink from "./SidebarLink.vue";
 
 export default {
@@ -55,14 +55,14 @@ export default {
       type: String,
       default: require("@/assets/img/vue-logo.png"),
     },
-    // sidebarItemColor: {
-    //   type: String,
-    //   default: "green",
-    //   validator: (value) => {
-    //     let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
-    //     return acceptedValues.indexOf(value) !== -1;
-    //   },
-    // },
+    sidebarItemColor: {
+      type: String,
+      default: "green",
+      validator: (value) => {
+        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
+        return acceptedValues.indexOf(value) !== -1;
+      },
+    },
     sidebarLinks: {
       type: Array,
       default: () => [],
@@ -78,11 +78,11 @@ export default {
     };
   },
   computed: {
-    // sidebarStyle() {
-    //   return {
-    //     backgroundImage: `url(${this.sidebarBackgroundImage})`,
-    //   };
-    // },
+    sidebarStyle() {
+      return {
+        backgroundImage: `url(${this.sidebarBackgroundImage})`,
+      };
+    },
   },
 };
 </script>

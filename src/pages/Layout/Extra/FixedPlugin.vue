@@ -40,6 +40,12 @@
             title="Vue Material Dashboard - Admin Template for Vue.js"
             hashtags="vuejs, dashboard, vuematerial"
             twitter-user="creativetim"
+          > -->
+          <social-sharing
+            :url="shareUrl"
+            title="Vue Material Dashboard - Admin Template for Vue.js"
+            hashtags="vuejs, dashboard, vuematerial"
+            twitter-user="creativetim"
           >
             <div class="centered-buttons">
               <network
@@ -55,20 +61,20 @@
                 <i class="fab fa-twitter"></i>
               </network>
             </div>
-          </social-sharing> -->
+          </social-sharing>
         </li>
       </ul>
     </div>
   </div>
 </template>
-<script lang="ts">
+<script lang="js">
 import Vue from "vue";
 import SocialSharing from "vue-social-sharing";
-// import VueGitHubButtons from "vue-github-buttons";
+import VueGitHubButtons from "vue-github-buttons";
 import "vue-github-buttons/dist/vue-github-buttons.css";
 
-// Vue.use(SocialSharing);
-// Vue.use(VueGitHubButtons, { useCache: true });
+Vue.use(SocialSharing);
+Vue.use(VueGitHubButtons, { useCache: true });
 export default {
   data() {
     return {
@@ -94,30 +100,30 @@ export default {
     };
   },
   methods: {
-    // toggleDropDown() {
-    //   this.isOpen = !this.isOpen;
-    // },
-    // closeDropDown() {
-    //   this.isOpen = false;
-    // },
-    // toggleList(list, itemToActivate) {
-    //   list.forEach(listItem => {
-    //     listItem.active = false;
-    //   });
-    //   itemToActivate.active = true;
-    // },
-    // updateValue(name, val) {
-    //   console.log(name);
-    //   this.$emit(`update:${name}`, val);
-    // },
-    // changeSidebarBackground(item) {
-    //   this.$emit("update:color", item.color);
-    //   this.toggleList(this.sidebarColors, item);
-    // },
-    // changeSidebarImage(item) {
-    //   this.$emit("update:image", item.image);
-    //   this.toggleList(this.sidebarImages, item);
-    // }
+    toggleDropDown() {
+      this.isOpen = !this.isOpen;
+    },
+    closeDropDown() {
+      this.isOpen = false;
+    },
+    toggleList(list, itemToActivate) {
+      list.forEach(listItem => {
+        listItem.active = false;
+      });
+      itemToActivate.active = true;
+    },
+    updateValue(name, val) {
+      console.log(name);
+      this.$emit(`update:${name}`, val);
+    },
+    changeSidebarBackground(item) {
+      this.$emit("update:color", item.color);
+      this.toggleList(this.sidebarColors, item);
+    },
+    changeSidebarImage(item) {
+      this.$emit("update:image", item.image);
+      this.toggleList(this.sidebarImages, item);
+    }
   },
 };
 </script>

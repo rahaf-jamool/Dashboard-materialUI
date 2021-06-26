@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es5",
+    "module": "commonjs",
     "strict": true,
     "jsx": "preserve",
     "importHelpers": true,
@@ -11,6 +11,10 @@
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "baseUrl": ".",
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist",
     "resolveJsonModule": true,
     "types": ["webpack-env"],
     "paths": {
@@ -25,8 +29,11 @@
     "src/**/*.vue",
     "tests/**/*.ts",
     "tests/**/*.tsx",
-    "src/globalComponents.js",
+    "src/store/index.js",
+    "src/router/index.js",
     "src/globalDirectives.js",
+    "src/globalComponents.js",
+    "src/material-dashboard.js",
     "src/main.ts"
   ],
   "exclude": ["node_modules"]

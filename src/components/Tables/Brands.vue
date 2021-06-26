@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 // import { mapState } from 'vuex';
 export default {
   name: "Brands",

@@ -13,7 +13,7 @@
     </md-card-actions>
   </md-card>
 </template>
-<script lang="ts">
+<script lang="js">
 export default {
   name: "stats-card",
   props: {
