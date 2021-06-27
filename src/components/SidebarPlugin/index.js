@@ -1,5 +1,5 @@
-import Sidebar from "./SideBar.vue";
-import SidebarLink from "./SidebarLink.vue";
+import Sidebar from "./SideBar";
+import SidebarLink from "./SidebarLink";
 
 const SidebarStore = {
   showSidebar: false,
@@ -13,14 +13,14 @@ const SidebarPlugin = {
     Vue.mixin({
       data() {
         return {
-          sidebarStore: SidebarStore,
+          SidebarStore: SidebarStore,
         };
       },
     });
 
     Object.defineProperty(Vue.prototype, "$sidebar", {
       get() {
-        return this.$root.sidebarStore;
+        return this.$root.SidebarStore;
       },
     });
     Vue.component("side-bar", Sidebar);
