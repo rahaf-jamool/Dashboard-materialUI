@@ -1,15 +1,16 @@
 <template>
   <div id="app">
+    <!-- <Home /> -->
     <router-view></router-view>
-</div>
+  </div>
 </template>
 
-<script lang="ts">
+<script lang="js">
 import { defineComponent } from "vue";
-
+// import Home from "./Sign/home"
 export default defineComponent({
-  name: "Home",
-  components: {},
+  name: "App",
+  // components: {Home},
 });
 </script>
 
