@@ -1,8 +1,4 @@
-import { createApp } from "vue";
-import Vuex from "vuex";
-import axios from "axios";
-
-createApp.use(Vuex, axios);
+// import axios from "axios";
 
 // async export const signIn = ({commit},Credentials) =>{
 //     let response = await axios.post('url/api/auth/signin',Credentials)

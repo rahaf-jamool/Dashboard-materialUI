@@ -1,5 +1,7 @@
 import { directive as vClickOutside } from "vue-clickaway";
-
+/**
+ * You can register global components here and use them as a plugin in your main Vue instance
+ */
 const GlobalDirectives = {
   install(createApp) {
     createApp.directive("click-outside", vClickOutside);

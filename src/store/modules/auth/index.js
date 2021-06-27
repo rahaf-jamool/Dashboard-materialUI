@@ -2,15 +2,15 @@ import state from "./state";
 import * as mutations from "./mutations";
 import * as actions from "./action";
 import * as getters from "./getters";
-import { createApp } from "vue";
+// import { createApp } from "vue";
 import { createStore } from "vuex";
-import axios from "axios";
+// import axios from "axios";
 
-createApp.use(createStore, axios);
+// createApp.use(axios);
 
-export default {
+export default createStore({
   state,
   mutations,
   actions,
   getters,
-};
+});

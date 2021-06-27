@@ -1,13 +1,13 @@
 import state from "./state";
 import * as mutations from "./mutations";
 import * as actions from "./action";
-import { createApp } from "vue";
-import Vuex from "vuex";
-import axios from "axios";
+// import { createApp } from "vue";
+import { createStore } from "vuex";
+// import axios from "axios";
 
-createApp.use(Vuex, axios);
+// createApp.use(axios);
 
-export default Vuex.createStore({
+export default createStore({
   namespaced: true,
   state,
   mutations,
