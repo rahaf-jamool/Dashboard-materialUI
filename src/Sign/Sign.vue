@@ -6,8 +6,9 @@
           <div class="row full-height justify-content-center">
             <div class="col-12 text-center align-self-center py-5">
               <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                <TheNavigation />
                 <h6 class="mb-0 pb-3">
-                  <span>Log In </span><span>Sign Up</span>
+                  <span>Register</span><span>Log In</span>
                 </h6>
                 <input
                   class="checkbox"
@@ -18,7 +19,47 @@
                 <label for="reg-log"></label>
                 <div class="card-3d-wrap mx-auto">
                   <div class="card-3d-wrapper">
-                    <form class="card-front" @submit.prevent="submit">
+                    <form class="card-front" @submit.prevent="submit1">
+                      <div class="center-wrap">
+                        <div class="section text-center">
+                          <h4 class="mb-4 pb-3">Register</h4>
+                          <div class="form-group">
+                            <input
+                              type="text"
+                              name="logname"
+                              class="form-style"
+                              v-model="form.name"
+                              placeholder="Your Full Name"
+                            />
+                            <i class="input-icon uil uil-user"></i>
+                          </div>
+                          <div class="form-group">
+                            <input
+                              type="email"
+                              name="logemail"
+                              class="form-style"
+                              v-model="form.email"
+                              placeholder="Your Email"
+                            />
+                            <i class="input-icon uil uil-at"></i>
+                          </div>
+                          <div class="form-group mt-2">
+                            <input
+                              type="password"
+                              name="logpass"
+                              class="form-style"
+                              v-model="form.password"
+                              placeholder="Your Password"
+                            />
+                            <i class="input-icon uil uil-lock-alt"></i>
+                          </div>
+                          <button type="submit" class="btn mt-4">
+                            Register
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <form class="card-back" @submit.prevent="submit">
                       <div class="center-wrap">
                         <div class="section text-center">
                           <h4 class="mb-4 pb-3">Log In</h4>
@@ -26,80 +67,39 @@
                             <input
                               type="text"
                               name="logname"
-                              v-model="form.name"
                               class="form-style"
                               placeholder="Your Full Name"
+                              v-model="form.name"
                             />
                             <i class="input-icon uil uil-user"></i>
                           </div>
-                          <div class="form-group">
+                          <div class="form-group mt-2">
                             <input
                               type="email"
-                              v-model="form.email"
                               name="logemail"
                               class="form-style"
                               placeholder="Your Email"
+                              v-model="form.email"
                             />
                             <i class="input-icon uil uil-at"></i>
                           </div>
                           <div class="form-group mt-2">
                             <input
                               type="password"
-                              v-model="form.password"
                               name="logpass"
                               class="form-style"
                               placeholder="Your Password"
+                              v-model="form.password"
                             />
                             <i class="input-icon uil uil-lock-alt"></i>
                           </div>
-                          <button type="submit" class="btn mt-4">submit</button>
+                          <button type="submit" class="btn mt-4">Log In</button>
                           <p class="mb-0 mt-4 text-center">
                             <a href="#0" class="link">Forgot your password?</a>
                           </p>
                         </div>
                       </div>
                     </form>
-                    <!-- <form class="card-back">
-                      <div class="center-wrap">
-                        <div class="section text-center">
-                          <h4 class="mb-4 pb-3">Sign Up</h4>
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              name="logname"
-                              class="form-style"
-                              placeholder="Your Full Name"
-                              id="logname"
-                              autocomplete="off"
-                            />
-                            <i class="input-icon uil uil-user"></i>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input
-                              type="email"
-                              name="logemail"
-                              class="form-style"
-                              placeholder="Your Email"
-                              id="logemail"
-                              autocomplete="off"
-                            />
-                            <i class="input-icon uil uil-at"></i>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input
-                              type="password"
-                              name="logpass"
-                              class="form-style"
-                              placeholder="Your Password"
-                              id="logpass"
-                              autocomplete="off"
-                            />
-                            <i class="input-icon uil uil-lock-alt"></i>
-                          </div>
-                          <button class="btn mt-4">submit</button>
-                        </div>
-                      </div>
-                    </form> -->
                   </div>
                 </div>
               </div>
@@ -112,7 +112,6 @@
 </template>
 
 <script>
-// import axios from 'axios';
 import { mapActions } from "vuex";
 export default {
   data() {
@@ -128,6 +127,9 @@ export default {
       },
     };
   },
+  components: {
+    TheNavigation: () => import("./components/TheNavigation"),
+  },
   methods: {
     // sign: function() {
     //   if (
@@ -139,15 +141,24 @@ export default {
     //   console.log(this.signing);
     // },
     ...mapActions({
-      signIn: "signIn",
+      signIn: "auth/signIn",
+      register: "auth/register",
     }),
     submit() {
-      this.signIn(this.form);
+      this.signIn(this.form)
+        .then(() => {
+          this.$router.replace({
+            name: "Dashboard",
+          });
+        })
+        .catch(() => {
+          console.log("failed");
+        });
+    },
+    submit1() {
+      this.register(this.form);
     },
   },
-  // mounted() {
-  //   this.$store.dispatch("signIn");
-  // },
 };
 </script>
 <style scoped>

@@ -1,4 +1,4 @@
 export default {
-    token:null,
-    user:null
-}
+  token: null,
+  user: null,
+};

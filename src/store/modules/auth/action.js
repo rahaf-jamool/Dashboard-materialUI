@@ -1,26 +1,50 @@
-import Vue from "vue";
-import Vuex from "vuex";
 import axios from "axios";
 
-Vue.use(Vuex, axios);
-
-export const signIn = ({ commit }, Credentials) => {
-  axios.post("/api/auth/login", Credentials);
-  console.log(response);
-  commit("attempt", response);
+export const signIn = async ({ dispatch }, Credentials) => {
+  let res = await axios.post(
+    "http://edalili.e-dalely.com/public/api/auth/login",
+    Credentials
+  );
+  console.log(res.data);
+  return dispatch("attempt", res.data.access_token);
+};
+export const attempt = async ({ commit }, token) => {
+  console.log(token);
+  commit("SET_TOKEN", token);
+  // try {
+  //   let res = await axios.get("auth/me", {
+  //     headers: {
+  //       Authorization: "Bearer" + token,
+  //     },
+  //   });
+  //   commit("SET_USER", res.data);
+  // } catch (e) {
+  //   commit("SET_TOKEN", null);
+  //   commit("SET_USER", null);
+  // }
 };
 
-export const attempt = ({ commit }, token) => {
-  commit("SET_TOKEN", token);
-  try {
-    axios.get("url/api/auth/me", {
-      headers: {
-        Authorization: "Bearer" + token,
-      },
-    });
-    commit("SET_USER", response.data);
-  } catch (e) {
-    commit("SET_TOKEN", null);
-    commit("SET_USER", null);
-  }
+//Register
+export const register = async ({ dispatch }, Credentials) => {
+  let res = await axios.post(
+    "http://edalili.e-dalely.com/public/api/auth/register",
+    Credentials
+  );
+  console.log(res.data);
+  return dispatch("attempt1", res.data.access_token);
+};
+export const attempt1 = async ({ commit }, token) => {
+  console.log(token);
+  commit("SET_TOKEN1", token);
+  // try {
+  //   let res = await axios.get("auth/me", {
+  //     headers: {
+  //       Authorization: "Bearer" + token,
+  //     },
+  //   });
+  //   commit("SET_USER", res.data);
+  // } catch (e) {
+  //   commit("SET_TOKEN", null);
+  //   commit("SET_USER", null);
+  // }
 };
