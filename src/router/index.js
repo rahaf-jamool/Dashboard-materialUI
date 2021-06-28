@@ -4,10 +4,6 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // import Dashboard from "@/pages/Dashboard.vue";
 
-// Products
-import AllProducts from "@/pages/Product/View/AllProducts.vue";
-import NewProduct from "@/pages/Product/View/NewProduct.vue";
-import EditProduct from "@/pages/Product/View/EditProduct.vue";
 
 const routes = [
   // {
@@ -200,22 +196,6 @@ const routes = [
   //     }
   //   ],
   // },
-  // Products
-  {
-    path: "/allproducts",
-    name: "All Products",
-    component: AllProducts,
-  },
-  {
-    path: "/newproduct",
-    name: "New Product",
-    component: NewProduct,
-  },
-  {
-    path: "/products/:id",
-    name: "Products",
-    component: EditProduct,
-  },
 ];
 
 const router = createRouter({

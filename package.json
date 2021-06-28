@@ -8,11 +8,14 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/styles": "^4.11.4",
     "axios": "^0.21.1",
     "chartist": "^0.11.4",
     "core-js": "^3.6.5",
     "es6-promise": "^4.2.8",
     "google-maps": "^4.3.3",
+    "react": "^17.0.2",
     "sass": "^1.35.1",
     "sass-loader": "^12.1.0",
     "vue": "^3.0.0",

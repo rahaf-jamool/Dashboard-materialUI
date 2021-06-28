@@ -7,6 +7,7 @@ import App from "./App.vue";
 import routes from "./router";
 //axios
 import axios from "axios";
+
 // Plugins
 // import GlobalDirectives from "@/globalDirectives";
 import GlobalComponents from "@/globalComponents";
