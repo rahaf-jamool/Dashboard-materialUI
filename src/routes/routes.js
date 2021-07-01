@@ -45,21 +45,21 @@ import EditMenu from "@/pages/Restaurant/View/Menus/EditMenu.vue";
 // Offer 
 import allOffers from "@/pages/Offers/View/allOffers.vue";
 const routes = [
+  {
+    path: "/",
+    name: 'Sign',
+    component: () => import("@/Sign/Sign.vue"),
+  },
   // {
-  //   path: "/",
-  //   name: 'Sign',
-  //   component: () => import("@/Sign/Sign.vue"),
+  //   path:"/",
+  //   name:'Home',
+  //   component:() => import("@/projectEdalili/views/Home.vue")
   // },
-  {
-    path:"/",
-    name:'Home',
-    component:() => import("@/projectEdalili/views/Home.vue")
-  },
-  {
-    path:"/signin",
-    name:'SignIn',
-    component:()=> import("@/Sign/views/SignIn.vue")
-  },
+  // {
+  //   path:"/signin",
+  //   name:'SignIn',
+  //   component:()=> import("@/Sign/views/SignIn.vue")
+  // },
  {
     path: "/",
     component:  DashboardLayout ,
