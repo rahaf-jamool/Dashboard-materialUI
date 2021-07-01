@@ -25,6 +25,18 @@ export default {
       user: "auth/user",
     }),
   },
+  methods: {
+    // ...mapActions({
+    //     signOutActions:'signOut'
+    // })
+    // signOut(){
+    //     this.signOutActions().then(()=>{
+    //         this.$router.replace({
+    //             name:'home'
+    //         })
+    //     })
+    // }
+  },
 };
 </script>
 

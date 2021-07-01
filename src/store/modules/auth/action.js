@@ -23,7 +23,12 @@ export const attempt = async ({ commit }, token) => {
   //   commit("SET_USER", null);
   // }
 };
-
+//     signOut ({commit}) {
+//         return axios.post('auth/signout').then(() => {
+//         commit('SET_TOKEN', null);
+//             commit('SET_USER', null);
+//              })
+//     }
 //Register
 export const register = async ({ dispatch }, Credentials) => {
   let res = await axios.post(
